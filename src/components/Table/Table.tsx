@@ -49,7 +49,7 @@ const Table = () => {
   };
 
   const loadDefaultFile = () => {
-    fetch('/src/assets/document.xml')
+    fetch('/assets/document.xml')
       .then((response) => response.text())
       .then((text) => {
         const parser = new DOMParser();
